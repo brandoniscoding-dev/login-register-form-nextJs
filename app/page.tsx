@@ -1,10 +1,10 @@
-import Register from "@/components/type1/Register";
-import Login from "@/components/type1/Login";
+import { Login, Register } from "@/components/type1";
 
 
 const Home = () => (
   <div className="h-screen flex items-center justify-center">
     < Register />
+    {/*< Login />*/}
   </div>
 );
 

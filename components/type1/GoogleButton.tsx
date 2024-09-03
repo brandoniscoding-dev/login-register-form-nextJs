@@ -1,7 +1,7 @@
 import { Button } from '../ui/button'; 
 import Image from 'next/image'; 
 
-const GoogleButton = () => (
+export const GoogleButton = () => (
   <Button variant={'outline'} className="flex items-center space-x-2">
     <Image 
       src="/google.svg"
@@ -13,5 +13,4 @@ const GoogleButton = () => (
   </Button>
 );
 
-export default GoogleButton;
 

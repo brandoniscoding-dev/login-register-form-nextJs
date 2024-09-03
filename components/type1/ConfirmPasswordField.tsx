@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 import { Input } from '../ui/input';
 
-interface PasswordInputProps {
+interface ConfirmPasswordFieldProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder: string;
 }
 
-const PasswordInput = ({ value, onChange, placeholder }: PasswordInputProps) => {
+export const ConfirmPasswordField = ({ value, onChange, placeholder }: ConfirmPasswordFieldProps) => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -31,4 +31,3 @@ const PasswordInput = ({ value, onChange, placeholder }: PasswordInputProps) => 
   );
 };
 
-export default PasswordInput;

@@ -7,7 +7,7 @@ interface InputFieldProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const InputField = ({ type, value, placeholder, onChange }: InputFieldProps) => {
+export const InputField = ({ type, value, placeholder, onChange }: InputFieldProps) => {
   return (
     <div className="relative w-full">
       <span className="absolute left-0 text-gray-500 pointer-events-none">
@@ -24,4 +24,3 @@ const InputField = ({ type, value, placeholder, onChange }: InputFieldProps) => 
   );
 };
 
-export default InputField;

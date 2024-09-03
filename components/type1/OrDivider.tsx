@@ -1,5 +1,5 @@
 
-const OrDivider = () => {
+export const OrDivider = () => {
   return (
     <div className="relative flex items-center w-full my-4">
       <hr className="flex-grow border-t border-gray-300" />
@@ -9,4 +9,3 @@ const OrDivider = () => {
   );
 };
 
-export default OrDivider;

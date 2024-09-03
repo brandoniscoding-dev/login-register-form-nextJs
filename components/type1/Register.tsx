@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import GoogleButton from "./googleButton";
 import { Input } from "../ui/input";
-import PasswordInput from "./passwordInput";
 import { Button } from "../ui/button";
-import OrDivider from "./orDivider";
 import { motion } from "framer-motion";
+import { GoogleButton } from "./GoogleButton";
+import { OrDivider } from "./OrDivider";
+import { ConfirmPasswordField } from './ConfirmPasswordField';
 
-const Register = () => {
+export const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -82,7 +82,7 @@ const Register = () => {
         transition={{ delay: 1, duration: 0.4, ease: "easeInOut" }}
         className="w-full"
       >
-        <PasswordInput
+        <ConfirmPasswordField
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           placeholder="Confirm Password"
@@ -123,5 +123,3 @@ const Register = () => {
     </motion.div>
   );
 };
-
-export default Register;

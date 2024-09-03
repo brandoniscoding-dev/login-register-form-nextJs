@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import GoogleButton from "./googleButton";
 import { Input } from "../ui/input";
-import PasswordInput from "./passwordInput";
 import { Button } from "../ui/button";
-import OrDivider from "./orDivider";
 import { motion } from "framer-motion";
+import { GoogleButton } from "./GoogleButton";
+import { OrDivider } from "./OrDivider";
+import { ConfirmPasswordField } from "./ConfirmPasswordField";
 
-const Login = () => {
+export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -66,7 +66,7 @@ const Login = () => {
         transition={{ delay: 0.8, duration: 0.4, ease: "easeInOut" }}
         className="w-full"
       >
-        <PasswordInput
+        <ConfirmPasswordField
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
@@ -96,4 +96,3 @@ const Login = () => {
   );
 };
 
-export default Login;
